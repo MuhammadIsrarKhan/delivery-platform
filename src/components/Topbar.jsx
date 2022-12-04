@@ -2,10 +2,10 @@ import searchIcon from "../assets/searchIcon.svg";
 import messageIcon from "../assets/message.svg";
 import bellIcon from "../assets/bell.svg";
 import avatarImg from "../assets/my.jpg";
-import Neworder from "./Neworder";
+import { Link } from "react-router-dom";
 const Topbar = () => {
   return (
-    <nav class="fixed top-0 w-3/4 ml-[25%] flex flex-row  items-center py-3 bg-[#FCFCFC] h-20">
+    <nav class="fixed top-0 w-3/4 ml-[25%] flex flex-row  items-center py-3 z-50 bg-[#FCFCFC] h-20">
       <div class="container-fluid w-full flex flex-wrap items-center px-6">
         <form>
           <div class="relative">
@@ -28,12 +28,13 @@ const Topbar = () => {
           </div>
         </form>
 
-        <button
+        <Link
+          to="/neworder"
           type="button"
           class="  ml-64 w-36 h-12 gap-2 px-2 py-2 rounded-xl bg-[#2A85FF] text-white font-medium text-base leading-normal text-center shadow-md hover:bg-blue-700 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
         >
           <span className="text-xl">+</span> New order
-        </button>
+        </Link>
         <button class="m-6 ml-12 inline-flex relative w-fit">
           <div class="absolute inline-block top-0 right-0 bottom-auto left-auto translate-x-1 -translate-y-1 border-2 border-slate-50 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 p-1.5 text-xs bg-[#FF6A55] rounded-full z-10"></div>
           <img src={messageIcon} alt="message icon" />

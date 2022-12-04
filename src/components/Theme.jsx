@@ -22,10 +22,8 @@ const Theme = () => {
   return (
     <div className="w-72 box-border h-10 bg-[#F4F4F4] rounded-[40px] absolute bottom-7 ml-6 text-center flex flex-row">
       <button
-        className={`w-1/2 box-border ${
-          themeStatus === "light"
-            ? "bg-[#FCFCFC] m-[4px] rounded-[32px] shadow"
-            : ""
+        className={`w-1/2 m-[4px] ${
+          themeStatus === "light" ? "bg-[#FCFCFC] rounded-[32px] shadow" : ""
         }`}
         onClick={sunBtnHandler}
       >
@@ -37,10 +35,8 @@ const Theme = () => {
         Light
       </button>
       <button
-        className={`w-1/2 dark:bg-black ${
-          themeStatus === "dark"
-            ? "bg-[#FCFCFC] m-[4px] rounded-[32px] shadow "
-            : ""
+        className={`w-1/2 m-[4px] dark:bg-black ${
+          themeStatus === "dark" ? "bg-[#FCFCFC] rounded-[32px] shadow " : ""
         }`}
         onClick={moonBtnHandler}
       >

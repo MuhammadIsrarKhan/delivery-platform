@@ -13,7 +13,7 @@ import Topbar from "./Topbar";
 import Theme from "./Theme";
 
 const Sidebar = () => {
-  const [activeStatus, setActiveStatus] = useState("order management");
+  const [activeStatus, setActiveStatus] = useState("");
   const ordersHandler = () => {
     if (activeStatus === "order management") {
       setActiveStatus("");
@@ -23,8 +23,8 @@ const Sidebar = () => {
   };
   return (
     //sidebar
-    <>
-      <div className="flex flex-col bg-[#FCFCFC] w-1/4 h-screen">
+    <div>
+      <div className="flex flex-col bg-[#FCFCFC] w-1/4 h-screen fixed z-50">
         <img
           src={logo}
           alt="logo"
@@ -147,10 +147,10 @@ const Sidebar = () => {
         </aside>
       </div>
       <Topbar />
-      <div className="fixed top-28 left-96 flex flex-row justify-center align-center">
+      <div className="absolute top-28 left-[335px]  flex flex-row justify-center align-center">
         <Outlet />
       </div>
-    </>
+    </div>
   );
 };
 
