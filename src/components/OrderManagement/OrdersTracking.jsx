@@ -1,28 +1,29 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import searchIcon from "../assets/searchIcon.svg";
-import personIcon from "../assets/person.svg";
+import searchIcon from "../../assets/searchIcon.svg";
+import assignLabel from "../../assets/assignLabel.svg";
+import trackOrder from "../../assets/trackOrder.svg";
 
-const OrderManagement = () => {
+const OrderTracking = () => {
   return (
     <>
-      <div>
+      <div className="ml-10 laptop-3:ml-14">
         <h3 className="font-semibold text-[40px] mb-4 ml-1 tracking-[-2%] leading-[48px]">
-          Orders management
+          Orders Tracking
         </h3>
-        <div className="align-middle rounded-tl-lg rounded-tr-lg inline-block w-[948px] py-4 overflow-hidden bg-white shadow-lg">
+        <div className="align-middle rounded-tl-lg rounded-tr-lg inline-block w-[948px]  laptop-3:w-[990px] py-4 overflow-hidden bg-white shadow-lg">
           <div className="flex justify-between ml-4">
             <div className="w-5 h-10 rounded  bg-[#CABDFF]"></div>
             <div className="font-semibold text-xl leading-8 py-1">Orders</div>
 
             <form>
-              <div class="relative">
-                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+              <div className="relative">
+                <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                   <img src={searchIcon} alt="search icon" />
                 </div>
                 <input
                   type="search"
                   id="default-search"
-                  class="block focus:outline-none p-3 pl-10  font-bold text-xs w-80  rounded-lg bg-[#F4F4F4] caret-[#2A85FF]"
+                  className="block focus:outline-none p-3 pl-10  font-bold text-xs w-80  rounded-lg bg-[#F4F4F4] caret-[#2A85FF]"
                   placeholder="Search orders"
                   required
                 />
@@ -67,7 +68,7 @@ const OrderManagement = () => {
             </div>
           </div>
         </div>
-        <div className="inline-block w-[948px] shadow rounded-b-lg   bg-white  pt-3 ">
+        <div className="inline-block w-[948px] laptop-3:w-[990px] shadow rounded-b-lg   bg-white  pt-3 ">
           <table className="w-[948px]">
             <thead>
               <tr>
@@ -92,7 +93,7 @@ const OrderManagement = () => {
                 <th className=" border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E]">
                   Drop Off Location
                 </th>
-                <th className=" border-b-2 border-gray-100 text-sm leading-4   text-[#6F767E]">
+                <th className="-translate-x-4 border-b-2 border-gray-100 text-sm leading-4   text-[#6F767E]">
                   Status
                 </th>
                 <th className="-translate-x-4 w-20   border-b-2 border-gray-100  text-sm leading-4 text-[#6F767E] ">
@@ -131,16 +132,13 @@ const OrderManagement = () => {
                 <td className="px-6 text-xs font-medium py-4 whitespace-no-wrap  border-b-2 border-gray-100 leading-5">
                   islamia college peshawar pakistan
                 </td>
-                <td className="px-6 py-4 whitespace-no-wrap border-b-2 border-gray-100 text-blue-900 text-xs leading-5">
-                  <div className="flex flex-nowrap gap-x-px">
-                    <div className=" w-2 h-3  rounded-xl bg-red-500 mr-2 mt-1  "></div>
-                    <div>unassigned</div>
-                  </div>
+                <td className=" whitespace-no-wrap border-b-2 border-gray-100 ">
+                  <img src={assignLabel} alt="assign label" />
                 </td>
                 <td>
                   <img
                     className="w-7 h-7 relative left-3"
-                    src={personIcon}
+                    src={trackOrder}
                     alt="personIcon"
                   />
                 </td>
@@ -162,4 +160,4 @@ const OrderManagement = () => {
   );
 };
 
-export default OrderManagement;
+export default OrderTracking;

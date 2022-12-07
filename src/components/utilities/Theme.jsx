@@ -20,7 +20,7 @@ const Theme = () => {
   //   html.classList.remove("dark");
   // }
   return (
-    <div className="w-72 box-border h-10 bg-[#F4F4F4] rounded-[40px] absolute bottom-7 ml-6 text-center flex flex-row">
+    <div className="w-72 lg:w-56 box-border h-10 bg-[#F4F4F4] rounded-[40px] absolute bottom-7 ml-6 text-center flex flex-row">
       <button
         className={`w-1/2 m-[4px] ${
           themeStatus === "light" ? "bg-[#FCFCFC] rounded-[32px] shadow" : ""

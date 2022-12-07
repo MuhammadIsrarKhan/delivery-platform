@@ -1,23 +1,23 @@
-import TextArea from "./utilities/TextArea";
-import leftArrowIcon from "../assets/leftarrow.svg";
-import subtractIcon from "../assets/subtract.svg";
-import newCustomerBtn from "../assets/newCustomerBtn.svg";
-import locationIcon from "../assets/location.svg";
-import newTag from "../assets/newtag.svg";
-import preview from "../assets/preview.svg";
-import myImage from "../assets/my.jpg";
-import doubleTick from "../assets/doubleTick.svg";
-import threeDots from "../assets/threeDots.svg";
+import TextArea from "..//utilities/TextArea";
+import leftArrowIcon from "../../assets/leftarrow.svg";
+import subtractIcon from "../../assets/subtract.svg";
+import newCustomerBtn from "../../assets/newCustomerBtn.svg";
+import locationIcon from "../../assets/location.svg";
+import newTag from "../../assets/newtag.svg";
+import preview from "../../assets/preview.svg";
+import myImage from "../../assets/my.jpg";
+import doubleTick from "../../assets/doubleTick.svg";
+import threeDots from "../../assets/threeDots.svg";
 const Neworder = () => {
   return (
     <>
       <div className="flex flex-col">
-        <div className="ml-10">
+        <div className="ml-10 laptop-3:ml-16">
           <h3 className="font-semibold text-[40px] mb-4 ml-1 tracking-[-2%] leading-[48px]">
             New Order
           </h3>
           <div className="flex flex-row">
-            <div className=" w-[610px] rounded-lg p-6 gap-6 flex flex-col h-[860px]  bg-[#FCFCFC]">
+            <div className=" w-[610px] laptop-3:w-[672px] rounded-lg p-6 gap-6 flex flex-col h-[860px]  bg-[#FCFCFC]">
               <div className="flex flex-row">
                 <div className="w-4 h-8 rounded inline-block   bg-[#B5E4CA]"></div>
                 <p className="w-60 font-semibold text-xl leading-8  ml-3">
@@ -46,10 +46,10 @@ const Neworder = () => {
 
               <input
                 type="text"
-                className="-translate-y-4 p-3 w-[560px] rounded-xl focus:outline-none h-[48px] bg-[#FFFFFF] border-[2px] border-solid border-gray-200 focus:border-[#2a85ff59]"
+                className="-translate-y-4 p-3 w-[560px] laptop-3:w-[630px] rounded-xl focus:outline-none h-[48px] bg-[#FFFFFF] border-[2px] border-solid border-gray-200 focus:border-[#2a85ff59]"
               />
 
-              <div className="flex flex-row mt-1">
+              <div className="flex flex-row mt-1 laptop-3:w-[630px]">
                 <p className=" not-italic font-semibold text-sm leading-6 text-gray-800">
                   Description
                 </p>
@@ -65,8 +65,8 @@ const Neworder = () => {
               </div>
 
               <div className="mt-0 font-semibold relative -top-10">
-                <select class="form-select block w-full p-3   text-gray-700  bg-white border-[2px] border-solid border-gray-200 transition ease-in-out rounded-xl  focus:text-gray-700 focus:bg-white focus:border-[#2a85ff59] focus:outline-none">
-                  <option selected>Jhon Doe</option>
+                <select className="form-select block w-full p-3   text-gray-700  bg-white border-[2px] border-solid border-gray-200 transition ease-in-out rounded-xl  focus:text-gray-700 focus:bg-white focus:border-[#2a85ff59] focus:outline-none">
+                  <option>Jhon Doe</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
@@ -80,7 +80,7 @@ const Neworder = () => {
                 Pickup Location
               </p>
 
-              <div className="flex flex-row relative -top-16 w-[610px]">
+              <div className="flex flex-row relative -top-16 w-[610px] laptop-3:w-[672px]">
                 <img
                   className=" z-10 p-3  m-1 relative rounded-l-xl -top-[2px] bg-[#F4F4F4]"
                   src={locationIcon}
@@ -88,14 +88,14 @@ const Neworder = () => {
                 />
                 <input
                   type="text"
-                  className=" relative -left-[50px]  px-12 w-[600px] rounded-xl focus:outline-none h-[48px] bg-[#FFFFFF] border-[2px] border-solid border-gray-200 focus:border-[#2a85ff59]"
+                  className=" relative -left-[50px]  px-12 w-full rounded-xl focus:outline-none h-[48px] bg-[#FFFFFF] border-[2px] border-solid border-gray-200 focus:border-[#2a85ff59]"
                 />
               </div>
               <p className="text-[#6F767E] text-xs font-bold relative -top-16">
                 Drop off
               </p>
 
-              <div className="flex flex-row relative -top-20 w-[610px]">
+              <div className="flex flex-row relative -top-20 w-[610px] laptop-3:w-[672px]">
                 <img
                   className=" z-10 p-3  m-1 relative rounded-l-xl -top-[2px] bg-[#F4F4F4]"
                   src={locationIcon}
@@ -150,7 +150,7 @@ const Neworder = () => {
         </div>
         <div
           style={{ alignItems: "center" }}
-          className="w-[1014px] h-[88px] bg-[#FCFCFC] mt-3 flex flex-row"
+          className="w-[1014px] laptop-3:w-[1100px] h-[88px] bg-[#FCFCFC] mt-20 flex flex-row"
         >
           <img className="ml-5" src={doubleTick} alt="Double tick" />
           <p className="text-[#1A1D1F] text-sm font-medium ml-3">Last saved</p>
@@ -164,7 +164,7 @@ const Neworder = () => {
             </button>
             <button
               type="button"
-              class=" px-[20px] py-3 rounded-xl bg-[#2A85FF] text-white hover:bg-blue-700 hover:shadow-lg   focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
+              className=" px-[20px] py-3 rounded-xl bg-[#2A85FF] text-white hover:bg-blue-700 hover:shadow-lg   focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out"
             >
               <span className=" font-bold text-[15px]">Publish Now</span>
             </button>
