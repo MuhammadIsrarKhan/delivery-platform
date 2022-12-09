@@ -6,36 +6,36 @@ import trackOrder from "../../assets/trackOrder.svg";
 const OrderTracking = () => {
   return (
     <>
-      <div className="ml-10 laptop-3:ml-14">
-        <h3 className="font-semibold text-[40px] mb-4 ml-1 tracking-[-2%] leading-[48px]">
+      <div>
+        <h3 className="font-semibold xl:text-[40px] lg:text-3xl mb-4 ml-1 tracking-[-2%] leading-[48px]">
           Orders Tracking
         </h3>
-        <div className="align-middle rounded-tl-lg rounded-tr-lg inline-block w-[948px]  laptop-3:w-[990px] py-4 overflow-hidden bg-white shadow-lg">
-          <div className="flex justify-between ml-4">
-            <div className="w-5 h-10 rounded  bg-[#CABDFF]"></div>
-            <div className="font-semibold text-xl leading-8 py-1">Orders</div>
+        <div className="align-middle rounded-tl-lg rounded-tr-lg inline-block  lg:w-[72vw] py-4 overflow-hidden bg-white shadow-lg">
+          <div className="flex xl:justify-start justify-between ml-4 ">
+            <div className="flex flex-row gap-5">
+              <div className="w-5 h-10 rounded  bg-[#CABDFF]"></div>
+              <div className="font-semibold text-xl leading-8 py-1">Orders</div>
 
-            <form>
-              <div className="relative">
-                <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                  <img src={searchIcon} alt="search icon" />
+              <form>
+                <div className="relative">
+                  <div className="flex absolute inset-y-0 left-0 items-center pl-3">
+                    <img src={searchIcon} alt="search icon" />
+                  </div>
+                  <input
+                    type="search"
+                    className="block focus:outline-none p-3 pl-10  font-bold text-xs xl:w-80 lg:w-[24vw]  rounded-lg bg-[#F4F4F4] caret-[#2A85FF]"
+                    placeholder="Search orders"
+                    required
+                  />
                 </div>
-                <input
-                  type="search"
-                  id="default-search"
-                  className="block focus:outline-none p-3 pl-10  font-bold text-xs w-80  rounded-lg bg-[#F4F4F4] caret-[#2A85FF]"
-                  placeholder="Search orders"
-                  required
-                />
-              </div>
-            </form>
-            <div className="ml-10">
-              <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 ">
+              </form>
+            </div>
+            <div className="xl:absolute xl:right-5">
+              <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500">
                 <li className="mr-2">
                   <a
                     href="#"
                     className="inline-block py-2 mt-1 px-3 text-[#2A85FF] bg-[#EFEFEF] rounded-lg active"
-                    aria-current="page"
                   >
                     Pending
                   </a>
@@ -68,8 +68,8 @@ const OrderTracking = () => {
             </div>
           </div>
         </div>
-        <div className="inline-block w-[948px] laptop-3:w-[990px] shadow rounded-b-lg   bg-white  pt-3 ">
-          <table className="w-[948px]">
+        <div className="inline-block lg:w-[72vw] shadow rounded-b-lg   bg-white  pt-3 ">
+          <table className="lg:w-[72vw]">
             <thead>
               <tr>
                 <th className="relative left-2 border-b-2 border-gray-100  leading-4 text-[#6F767E] text-sm">
@@ -78,7 +78,7 @@ const OrderTracking = () => {
                 <th className="px-6 py-3 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E]">
                   Date
                 </th>
-                <th className="px-6 py-3 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E]">
+                <th className="lg:px-0 lg:py-0 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E]">
                   Order Number
                 </th>
                 <th className="px-6 py-3 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E]">
@@ -90,7 +90,7 @@ const OrderTracking = () => {
                 <th className="px-6 py-3 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E]">
                   Pickup Location
                 </th>
-                <th className=" border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E]">
+                <th className=" border-b-2 xl:pl-[1vw] border-gray-100 text-left text-sm leading-4 text-[#6F767E]">
                   Drop Off Location
                 </th>
                 <th className="-translate-x-4 border-b-2 border-gray-100 text-sm leading-4   text-[#6F767E]">
@@ -101,41 +101,39 @@ const OrderTracking = () => {
                 </th>
               </tr>
             </thead>
-            <tbody className="bg-whiteS">
+            <tbody className="bg-white">
               <tr className="w-[948px]">
-                <td className="px-6 py-4 whitespace-no-wrap border-b-2 border-gray-100">
+                <td className="px-6 py-4  border-b-2 border-gray-100">
                   <div className="flex items-center">
-                    <div>
-                      <div className="text-sm leading-5 text-gray-800">#1</div>
-                    </div>
+                    <div className="text-sm leading-5 text-gray-800">#1</div>
                   </div>
                 </td>
-                <td className=" py-4 whitespace-no-wrap border-b-2 border-gray-100">
+                <td className=" py-4  border-b-2 border-gray-100">
                   <div className="text-xs font-medium leading-5 text-blue-900">
                     02 Nov,2022
                   </div>
                 </td>
-                <td className="px-6 py-4 whitespace-no-wrap border-b-2 text-blue-900 border-gray-100 text-sm leading-5">
+                <td className="px-6 py-4  border-b-2 text-blue-900 border-gray-100 text-sm leading-5">
                   1
                 </td>
-                <td className="px-6 py-4 whitespace-no-wrap border-b-2 text-blue-900 border-gray-100 text-sm leading-5">
+                <td className="px-6 py-4  border-b-2 text-blue-900 border-gray-100 text-sm leading-5">
                   john
                 </td>
-                <td className=" py-4 whitespace-no-wrap border-b-2 text-blue-900 border-gray-100 text-xs leading-5 ">
+                <td className=" py-4  border-b-2 text-blue-900 border-gray-100 text-xs leading-5 ">
                   <div className="text-[#83BF6E] w-[92px] text-center bg-[#EAFAE4] rounded">
                     +01232193218
                   </div>
                 </td>
-                <td className="px-6 py-4 whitespace-no-wrap border-b-2 border-gray-100 text-blue-900 text-xs font-medium leading-5">
+                <td className="px-6 py-4  border-b-2 border-gray-100 text-blue-900 text-xs font-medium leading-5">
                   Deans
                 </td>
-                <td className="px-6 text-xs font-medium py-4 whitespace-no-wrap  border-b-2 border-gray-100 leading-5">
+                <td className="px-6 text-xs font-medium py-4   border-b-2 border-gray-100 leading-5 text-gray-800">
                   islamia college peshawar pakistan
                 </td>
-                <td className=" whitespace-no-wrap border-b-2 border-gray-100 ">
+                <td className="  border-b-2 border-gray-100 ">
                   <img src={assignLabel} alt="assign label" />
                 </td>
-                <td>
+                <td className="border-b-2 border-gray-100">
                   <img
                     className="w-7 h-7 relative left-3"
                     src={trackOrder}

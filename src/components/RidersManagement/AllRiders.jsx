@@ -6,12 +6,12 @@ import myImage from "../../assets/my.jpg";
 const AllRiders = () => {
   return (
     <>
-      <div className="ml-10">
-        <h3 className="font-semibold text-[40px] mb-4 ml-1 tracking-[-2%] leading-[48px]">
+      <div>
+        <h3 className="font-semibold xl:text-[40px] mb-4 ml-1 lg:text-3xl tracking-[-2%] leading-[48px]">
           Riders management
         </h3>
-        <div className="align-middle rounded-tl-lg rounded-tr-lg  w-[948px] laptop-3:w-[1020px] py-4 bg-white shadow-lg">
-          <div className="flex flex-row gap-4 ml-4">
+        <div className="align-middle rounded-tl-lg rounded-tr-lg  w-[948px] lg:w-[72vw] py-4 bg-white shadow-lg">
+          <div className="flex flex-row gap-4 ml-4 relative">
             <div className="w-5 h-10 rounded  bg-[#CABDFF]"></div>
             <div className="font-semibold text-xl leading-8 py-1">Orders</div>
 
@@ -22,14 +22,13 @@ const AllRiders = () => {
                 </div>
                 <input
                   type="search"
-                  id="default-search"
-                  className="block focus:outline-none p-3 pl-10  font-bold text-xs w-80  rounded-lg bg-[#F4F4F4] caret-[#2A85FF]"
+                  className="block focus:outline-none p-3 pl-10  font-bold text-xs lg:w-[25vw]  rounded-lg bg-[#F4F4F4] caret-[#2A85FF]"
                   placeholder="Search orders"
                   required
                 />
               </div>
             </form>
-            <div className="w-36 h-10 bg-[#EFEFEF] rounded-lg flex flex-row justify-center font-semibold text-sm text-[#2A85FF] ml-80 laptop-3:ml-96">
+            <div className="w-36 h-10 bg-[#EFEFEF] rounded-lg flex flex-row justify-center font-semibold text-sm text-[#2A85FF] lg:ml-0 absolute right-5 ">
               <img
                 className="w-6 h-6 relative top-2 mr-1"
                 src={exportIcon}
@@ -39,49 +38,49 @@ const AllRiders = () => {
             </div>
           </div>
         </div>
-        <div className="inline-block w-[948px] laptop-3:w-[1020px] shadow rounded-b-lg   bg-white  pt-3 ">
-          <table className="w-[948px] laptop-3:w-[1020px]">
+        <div className="inline-block w-[948px] lg:w-[72vw] shadow rounded-b-lg   bg-white  pt-3 ">
+          <table className="lg:w-[72vw]">
             <thead>
               <tr>
-                <th className="p-4  text-left  border-b-2 border-gray-100  leading-4 text-[#6F767E] text-sm">
+                <th className="p-4  text-left  border-b-2 border-gray-100  leading-4 text-[#6F767E] text-sm xl:text-base">
                   Id
                 </th>
-                <th className="w-[165px] laptop-3:w-60 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E]">
+                <th className="w-[165px] border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
                   User
                 </th>
-                <th className="w-32 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E]">
+                <th className="w-32 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
                   Phone Number
                 </th>
-                <th className="laptop-3:w-32 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E]">
+                <th className="border-b-2 xl:w-24 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
                   Team
                 </th>
-                <th className="w-20 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E]">
+                <th className="w-20 xl:w-32 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
                   Order Earnings
                 </th>
-                <th className="w-20 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E]">
+                <th className="w-20 border-b-2 xl:w-24 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
                   Total Paid
                 </th>
-                <th className="w-20 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E]">
+                <th className="w-20 border-b-2 xl:w-32 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
                   Final Balance
                 </th>
-                <th className="w-28 border-b-2 border-gray-100 text-left text-sm leading-4   text-[#6F767E]">
+                <th className="w-28 border-b-2 border-gray-100 text-left text-sm leading-4   text-[#6F767E] xl:text-base">
                   Vehicle Type
                 </th>
-                <th className="-translate-x-4 w-20 text-left   border-b-2 border-gray-100  text-sm leading-4 text-[#6F767E] pl-5">
+                <th className="-translate-x-4 w-20 text-left   border-b-2 border-gray-100  text-sm leading-4 text-[#6F767E] pl-5 xl:text-base">
                   Status
                 </th>
               </tr>
             </thead>
-            <tbody className="bg-whiteS">
+            <tbody className="bg-white">
               <tr className="w-[948px]">
-                <td className="p-4 whitespace-no-wrap border-b-2 border-gray-100">
+                <td className="p-4 border-b-2 border-gray-100">
                   <div className="flex items-center">
                     <div>
                       <div className="text-sm leading-5 text-gray-800">#1</div>
                     </div>
                   </div>
                 </td>
-                <td className=" py-4 whitespace-no-wrap border-b-2 border-gray-100">
+                <td className=" py-4 border-b-2 border-gray-100">
                   <div className="flex flex-row text-xs font-medium leading-5 text-blue-900">
                     <img
                       src={myImage}
@@ -98,7 +97,7 @@ const AllRiders = () => {
                     </div>
                   </div>
                 </td>
-                <td className=" py-4 whitespace-no-wrap border-b-2 text-blue-900 border-gray-100 text-xs leading-5 ">
+                <td className=" py-4  border-b-2 text-blue-900 border-gray-100 text-xs leading-5 ">
                   <div className="text-[#83BF6E] w-[92px] text-center bg-[#EAFAE4] rounded">
                     +01232193218
                   </div>
@@ -108,18 +107,18 @@ const AllRiders = () => {
                     Lusk
                   </p>
                 </td>
-                <td className=" py-4 whitespace-no-wrap border-b-2 border-gray-100  text-xs leading-5 ">
+                <td className=" py-4  border-b-2 border-gray-100  text-xs leading-5 ">
                   <p className="bg-[#EFEFEF] font-semibold  w-12  rounded-md text-center">
                     $308.5
                   </p>
                 </td>
-                <td className=" whitespace-no-wrap border-b-2 border-gray-100 text-sm font-semibold text-[#6F767E] leading-5 text-center">
+                <td className="  border-b-2 border-gray-100 text-sm font-semibold text-[#6F767E] leading-5 text-center">
                   $100.0
                 </td>
-                <td className=" whitespace-no-wrap border-b-2 border-gray-100 text-sm font-semibold text-[#6F767E] leading-5">
+                <td className="  border-b-2 border-gray-100 text-sm font-semibold text-[#6F767E] leading-5">
                   $410.8
                 </td>
-                <td className=" whitespace-no-wrap border-b-2 border-gray-100 text-blue-900 text-xs leading-5">
+                <td className="  border-b-2 border-gray-100 text-blue-900 text-xs leading-5">
                   <p className="text-[#1A1D1F] font-semibold text-sm text-center">
                     Bike
                   </p>

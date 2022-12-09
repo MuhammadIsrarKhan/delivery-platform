@@ -37,7 +37,7 @@ const TextArea = () => {
               </button>
               <button
                 type="button"
-                className="p-2 text-gray-500 rounded cursor-pointer hover:bg-gray-100 "
+                className="p-2 text-gray-500 rounded cursor-pointer hover:bg-gray-100"
               >
                 <img src={emoji} alt="emojiIcon" />
                 <span className="sr-only">Format code</span>
@@ -48,13 +48,6 @@ const TextArea = () => {
               >
                 <img src={link} alt="link Icon" />
                 <span className="sr-only">Add emoji</span>
-              </button>
-              <button
-                type="button"
-                className="p-2 text-gray-500 rounded cursor-pointer hover:bg-gray-100 "
-              >
-                <img src={emoji} alt="emojiIcon" />
-                <span className="sr-only">Format code</span>
               </button>
               <button
                 type="button"
@@ -72,14 +65,14 @@ const TextArea = () => {
               </button>
               <button
                 type="button"
-                className="translate-x-36 text-gray-500 rounded cursor-pointer hover:bg-gray-100 "
+                className="translate-x-36 lg:translate-x-0 lg:absolute lg:right-8 text-gray-500 rounded cursor-pointer hover:bg-gray-100 "
               >
                 <img src={backArrow} alt="link Icon" />
                 <span className="sr-only">Add emoji</span>
               </button>
               <button
                 type="button"
-                className="translate-x-36 text-gray-500 rounded cursor-pointer hover:bg-gray-100 "
+                className="translate-x-36 lg:translate-x-0 lg:absolute lg:right-2 text-gray-500 rounded cursor-pointer hover:bg-gray-100 "
               >
                 <img src={forwardArrow} alt="link Icon" />
                 <span className="sr-only">Add emoji</span>

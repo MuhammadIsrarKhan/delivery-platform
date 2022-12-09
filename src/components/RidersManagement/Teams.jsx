@@ -6,11 +6,11 @@ import rightArrowIcon from "../../assets/rightarrow.svg";
 import { Link } from "react-router-dom";
 const Teams = () => {
   return (
-    <div className="ml-10 laptop-3:ml-14">
-      <h3 className="font-semibold text-[40px] mb-4 ml-1 tracking-[-2%] leading-[48px] flex flex-col">
+    <div>
+      <h3 className="font-semibold xl:text-[40px] text-3xl mb-4 ml-1 tracking-[-2%] leading-[48px] flex flex-col">
         Teams management
       </h3>
-      <div className="rounded-lg w-[948px] laptop-3:w-[1020px] h-[440px] laptop-3:h-[998px] py-4 bg-white shadow-lg">
+      <div className="rounded-lg lg:w-[72vw] h-[440px] py-4 bg-white shadow-lg">
         <div className="flex flex-row gap-3 ml-4">
           <div className="w-5 h-10 rounded  bg-[#CABDFF]"></div>
           <div className="font-semibold text-xl leading-8 py-1">Teams</div>
@@ -31,9 +31,9 @@ const Teams = () => {
           </form>
         </div>
         <div className="flex flex-row gap-4 m-5">
-          <div className="w-[576px] ">
+          <div className="lg:w-[40vw]">
             <div className="flex flex-row gap-2">
-              <p className=" not-italic font-semibold text-sm leading-6 text-gray-800">
+              <p className="font-semibold xl:text-base text-sm leading-6 text-gray-800">
                 Teams
               </p>
               <img className="ml-1" src={subtractIcon} alt="subtract icon" />
@@ -48,7 +48,9 @@ const Teams = () => {
                     <p className="font-medium text-xs text-[#6F767E]">Name</p>
                   </td>
                   <td>
-                    <p className="font-medium text-xs text-[#6F767E]">Slug</p>
+                    <p className="font-medium text-xs lg:ml-8 text-[#6F767E]">
+                      Slug
+                    </p>
                   </td>
                   <td>
                     <p className="font-medium text-xs text-[#6F767E]">
@@ -63,11 +65,11 @@ const Teams = () => {
                 </tr>
               </thead>
             </table>
-            <hr className="w-[490px] mt-6 bg-[#EFEFEF] h-[1px]" />
+            <hr className="lg:w-[38vw] mt-5 bg-[#EFEFEF] h-[1px]" />
             <table className="w-full table-fixed">
               <tbody>
                 <tr>
-                  <td className="w-12">
+                  <td className="xl:w-12 lg:w-8">
                     <p className="font-medium text-xs text-[#6F767E] py-10">
                       1
                     </p>
@@ -83,7 +85,7 @@ const Teams = () => {
                     </p>
                   </td>
                   <td>
-                    <p className="font-semibold text-sm text-[#6F767E]">
+                    <p className="font-semibold lg:ml-[3vw] xl:ml-0 text-sm text-[#6F767E]">
                       Green Street
                     </p>
                   </td>
@@ -106,7 +108,7 @@ const Teams = () => {
                     </p>
                   </td>
                   <td>
-                    <p className="font-semibold text-sm text-[#6F767E]">
+                    <p className="font-semibold lg:ml-[3vw] xl:ml-0 text-sm text-[#6F767E]">
                       Green Street
                     </p>
                   </td>
@@ -120,11 +122,11 @@ const Teams = () => {
               <img src={loadmore} alt="load more" />
             </button>
           </div>
-          <div className="w-[328px] flex flex-col laptop-3:w-[400px]">
+          <div className="flex flex-col lg:w-[28vw]">
             <p className="font-semibold text-sm text-[#6F767E]">
               Green Street Riders
             </p>
-            <hr className="w-[290px] mt-6 bg-[#EFEFEF] h-[1px] laptop-3:w-[400px]" />
+            <hr className="w-[290px] mt-6 bg-[#EFEFEF] h-[1px] lg:w-[28vw]" />
 
             <Link className="mt-5 p-3 flex flex-row text-xs font-medium leading-5 text-blue-900 hover:bg-[#EFEFEF] focus:bg-[#EFEFEF] rounded-xl">
               <img src={myImage} alt="avatar" className="rounded-full w-10 " />
@@ -145,7 +147,7 @@ const Teams = () => {
                 </p>
               </div>
               <img
-                className=" ml-36 laptop-3:ml-[218px]"
+                className=" ml-36 lg:ml-0 absolute right-8 my-3"
                 src={rightArrowIcon}
                 alt="rightarrow icon"
               />

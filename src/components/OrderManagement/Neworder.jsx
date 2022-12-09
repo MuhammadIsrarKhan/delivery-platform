@@ -12,45 +12,52 @@ const Neworder = () => {
   return (
     <>
       <div className="flex flex-col">
-        <div className="ml-10 laptop-3:ml-16">
-          <h3 className="font-semibold text-[40px] mb-4 ml-1 tracking-[-2%] leading-[48px]">
+        <div>
+          <h3 className="font-semibold lg:text-3xl xl:text-[40px] mb-4 ml-1 tracking-[-2%] leading-[48px]">
             New Order
           </h3>
-          <div className="flex flex-row">
-            <div className=" w-[610px] laptop-3:w-[672px] rounded-lg p-6 gap-6 flex flex-col h-[860px]  bg-[#FCFCFC]">
-              <div className="flex flex-row">
-                <div className="w-4 h-8 rounded inline-block   bg-[#B5E4CA]"></div>
-                <p className="w-60 font-semibold text-xl leading-8  ml-3">
+          <div className="flex flex-row lg:w-[96%] xl:h-full xl:w-[100%] overflow-hidden">
+            <div className=" w-[610px] lg:w-[42vw] rounded-lg p-6 gap-6 flex flex-col h-[860px]  bg-[#FCFCFC]">
+              <div className="flex flex-row relative">
+                <div className="w-4 h-8 rounded inline-block bg-[#B5E4CA]"></div>
+                <p className="xl:w-60 lg:w-40 lg:my-1 font-semibold xl:text-xl lg:text-base leading-8  ml-3">
                   {" "}
                   Name & description
                 </p>
-                <button className="ml-[254px] px-8 w-24 h-10 border-2 border-[#EFEFEF] bg-[#FCFCFC] rounded-lg flex flex-row justify-center">
+
+                <button className="ml-[254px] absolute right-1 xl:px-8 lg:px-0 xl:w-24 lg:w-20 lg:h-8 xl:h-10 border-2 border-[#EFEFEF] bg-[#FCFCFC] rounded-lg flex flex-row justify-center">
                   <img
-                    className="my-auto"
+                    className="my-[7px] lg:w-4 lg:h-4 xl:w-5 xl:h-5"
                     src={leftArrowIcon}
                     alt="leftArrowIcon"
                   />{" "}
-                  <span className=" my-auto font-semibold ml-1">Back</span>
+                  <span className="my-auto font-semibold xl:text-lg lg:ml-2">
+                    Back
+                  </span>
                 </button>
               </div>
 
               <div className="flex flex-row">
-                <p className=" not-italic font-semibold text-sm leading-6 text-gray-800">
+                <p className="font-semibold text-sm xl:text-base text-gray-800">
                   Order title
                 </p>
-                <img className="ml-1" src={subtractIcon} alt="subtract icon" />
-                <p className="box-border font-semibold leading-6 text-xs h-6 ml-3 pb-[2px] pl-[8px] pr-[8px] bg-[#272B30] text-[#F4F4F4] rounded">
+                <img
+                  className="ml-1 lg:ml-1"
+                  src={subtractIcon}
+                  alt="subtract icon"
+                />
+                <p className="box-border font-semibold xl:text-xs lg:text-[9px] lg:tracking-wider lg:h-4 xl:h-6 ml-1 xl:px-2  xl:py-1 lg:pb-[2px] pl-[8px] pr-[8px] lg:px-1 lg:mt-1 bg-[#272B30] text-[#F4F4F4] rounded">
                   Maximum 100 characters. No HTML or emoji allowed
                 </p>
               </div>
 
               <input
                 type="text"
-                className="-translate-y-4 p-3 w-[560px] laptop-3:w-[630px] rounded-xl focus:outline-none h-[48px] bg-[#FFFFFF] border-[2px] border-solid border-gray-200 focus:border-[#2a85ff59]"
+                className="-translate-y-4 p-3 w-[560px] lg:w-[99%] rounded-xl focus:outline-none h-[48px] bg-[#FFFFFF] border-[2px] border-solid border-gray-200 focus:border-[#2a85ff59]"
               />
 
-              <div className="flex flex-row mt-1 laptop-3:w-[630px]">
-                <p className=" not-italic font-semibold text-sm leading-6 text-gray-800">
+              <div className="flex flex-row mt-1 ">
+                <p className="not-italic font-semibold xl:text-base text-sm leading-6 text-gray-800">
                   Description
                 </p>
                 <img className="ml-1" src={subtractIcon} alt="subtract icon" />
@@ -65,7 +72,7 @@ const Neworder = () => {
               </div>
 
               <div className="mt-0 font-semibold relative -top-10">
-                <select className="form-select block w-full p-3   text-gray-700  bg-white border-[2px] border-solid border-gray-200 transition ease-in-out rounded-xl  focus:text-gray-700 focus:bg-white focus:border-[#2a85ff59] focus:outline-none">
+                <select className="w-full p-3 text-gray-700  bg-white border-[2px] border-solid border-gray-200 transition ease-in-out rounded-xl  focus:text-gray-700 focus:bg-white focus:border-[#2a85ff59] focus:outline-none">
                   <option>Jhon Doe</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
@@ -80,7 +87,7 @@ const Neworder = () => {
                 Pickup Location
               </p>
 
-              <div className="flex flex-row relative -top-16 w-[610px] laptop-3:w-[672px]">
+              <div className="flex flex-row relative -top-16 w-[610px] lg:w-[200%]">
                 <img
                   className=" z-10 p-3  m-1 relative rounded-l-xl -top-[2px] bg-[#F4F4F4]"
                   src={locationIcon}
@@ -88,14 +95,14 @@ const Neworder = () => {
                 />
                 <input
                   type="text"
-                  className=" relative -left-[50px]  px-12 w-full rounded-xl focus:outline-none h-[48px] bg-[#FFFFFF] border-[2px] border-solid border-gray-200 focus:border-[#2a85ff59]"
+                  className="lg:w-[50%] relative -left-[50px]  px-12 w-full rounded-xl focus:outline-none h-[48px] bg-[#FFFFFF] border-[2px] border-solid border-gray-200 focus:border-[#2a85ff59]"
                 />
               </div>
               <p className="text-[#6F767E] text-xs font-bold relative -top-16">
                 Drop off
               </p>
 
-              <div className="flex flex-row relative -top-20 w-[610px] laptop-3:w-[672px]">
+              <div className="flex flex-row relative -top-16 xl:-top-20 w-[610px] lg:w-[200%]">
                 <img
                   className=" z-10 p-3  m-1 relative rounded-l-xl -top-[2px] bg-[#F4F4F4]"
                   src={locationIcon}
@@ -103,21 +110,21 @@ const Neworder = () => {
                 />
                 <input
                   type="text"
-                  className=" relative -left-[50px]  px-12 w-full rounded-xl focus:outline-none h-[48px] bg-[#FFFFFF] border-[2px] border-solid border-gray-200 focus:border-[#2a85ff59]"
+                  className="lg:w-[50%] relative -left-[50px]  px-12 w-full rounded-xl focus:outline-none h-[48px] bg-[#FFFFFF] border-[2px] border-solid border-gray-200 focus:border-[#2a85ff59]"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col gap-3 w-[310px] ml-2 h-[363px] rounded-lg p-6  bg-[rgb(252,252,252)]">
+            <div className=" flex flex-col gap-3 w-[310px] lg:w-[28vw] ml-2 h-[363px]  rounded-lg p-6  bg-[rgb(252,252,252)]">
               <div className="flex flex-row">
                 <img src={newTag} alt="tag " />
-                <p className="w-60 font-semibold text-xl leading-8  ml-3">
+                <p className="w-60 font-semibold text-xl lg:text-base lg:my-2  ml-3">
                   {" "}
                   Preview
                 </p>
                 <img src={preview} alt="preview icon" />
               </div>
-              <p className="w-60 font-semibold text-xl leading-8  ">
+              <p className="w-60 font-semibold text-xl lg:text-base ">
                 {" "}
                 Tower Burger
               </p>
@@ -149,15 +156,17 @@ const Neworder = () => {
           </div>
         </div>
         <div
-          style={{ alignItems: "center" }}
-          className="w-[1014px] laptop-3:w-[1100px] h-[88px] bg-[#FCFCFC] mt-20 flex flex-row"
+          style={{
+            alignItems: "center",
+          }}
+          className="w-[1014px] relative xl:-left-[28px]  lg:-left-[13px] lg:w-[110%] xl:w-[110%] h-[80px] bg-[#FCFCFC] mt-20 flex flex-row"
         >
-          <img className="ml-5" src={doubleTick} alt="Double tick" />
-          <p className="text-[#1A1D1F] text-sm font-medium ml-3">Last saved</p>
-          <p className="text-[#1A1D1F] text-sm font-semibold ml-1">
+          <img className="" src={doubleTick} alt="Double tick" />
+          <p className="text-[#1A1D1F] text-sm font-medium">Last saved</p>
+          <p className="text-[#1A1D1F] text-sm font-semibold">
             Oct 4,2021 - 23:22
           </p>
-          <div className="ml-[440px] flex flex-row gap-2">
+          <div className=" flex flex-row gap-2 absolute right-14">
             {" "}
             <button className="px-[20px] py-3 border-2 border-[#EFEFEF] bg-[#FCFCFC] rounded-lg">
               <span className=" font-bold text-[15px]">Save Draft</span>

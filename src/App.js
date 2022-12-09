@@ -5,7 +5,6 @@ import OrderTracking from "./components/OrderManagement/OrdersTracking";
 import RidersTracking from "./components/OrderManagement/RidersTracking";
 import AllRiders from "./components/RidersManagement/AllRiders";
 import Teams from "./components/RidersManagement/Teams";
-
 import Sidebar from "./components/Sidebar";
 import ErrorPage from "./pages/ErrorPage";
 
