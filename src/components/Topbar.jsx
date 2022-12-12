@@ -5,8 +5,10 @@ import bellIcon from "../assets/bell.svg";
 import avatarImg from "../assets/my.jpg";
 const Topbar = () => {
   return (
+    // Topbar started
     <nav className="fixed top-0 w-3/4 ml-[25%] flex flex-row  items-center py-3 z-50 bg-[#FCFCFC] xl:h-20 lg:h-16">
       <div className="container-fluid w-full flex flex-wrap items-center px-6">
+        {/* input in the Topbar */}
         <form>
           <div className="relative lg:w-10">
             <div className="flex absolute inset-y-0 left-0 items-center pl-3 ">
@@ -24,6 +26,7 @@ const Topbar = () => {
           </div>
         </form>
 
+        {/* btn, messageBtn, notificationBtn, avatar all are in below div  */}
         <div
           className="flex flex-row gap-10 lg:w-[600px] lg:absolute lg:right-10"
           style={{ alignItems: "center" }}

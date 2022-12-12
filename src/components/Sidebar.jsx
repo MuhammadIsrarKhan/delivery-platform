@@ -12,6 +12,7 @@ import customization from "../assets/custimaztion.svg";
 import customerIcon from "../assets/customerManagement/customer.svg";
 
 const Sidebar = () => {
+  //handling dropdown effect in side bar
   const [activeStatus, setActiveStatus] = useState("");
   const dropDownHandler = (status) => {
     if (activeStatus === status) {
@@ -31,10 +32,12 @@ const Sidebar = () => {
         />
         <aside className="mt-3" aria-label="Sidebar">
           <div className="lg:w-[26vw] xl:w-[25vw] xl:h-[70vh] xl:overflow-y-auto xl:overflow-x-hidden">
+            {/* All about OrderManagement nav-item are in the below component */}
             <OrderManagement
               activeStatus={activeStatus}
               dropDown={dropDownHandler}
             />
+            {/* All about RidersManagement nav-item are in the below component */}
             <RidersManagement
               activeStatus={activeStatus}
               dropDown={dropDownHandler}
@@ -103,8 +106,11 @@ const Sidebar = () => {
             <Theme />
           </div>
         </aside>
+        {/* side bar ul ended */}
       </div>
       <Topbar />
+
+      {/* Contents which are rendered below top and right from the sidebar */}
       <div className="absolute top-24 left-[27%]  flex flex-row justify-center align-center">
         <Outlet />
       </div>

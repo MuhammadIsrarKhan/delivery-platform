@@ -7,8 +7,10 @@ import downArrowIcon from "../../assets/arrowdown.svg";
 import rightArrowIcon from "../../assets/rightarrow.svg";
 const RidersManagement = ({ activeStatus, dropDown }) => {
   return (
+    // RidersManagement nav-items
     <ul className="space-y-2 lg:ml-3 xl:ml-4">
       <li>
+        {/* main nav-item  */}
         <Link
           to="/AllRiders"
           href="#"
@@ -50,6 +52,7 @@ const RidersManagement = ({ activeStatus, dropDown }) => {
         </Link>
         {activeStatus === "riders management" ? (
           <div>
+            {/* Nested nav-items of ordermanagement */}
             <ul className="ml-4 h-[260px] xl:w-[40vw]">
               <li>
                 <div className="flex flex-row">

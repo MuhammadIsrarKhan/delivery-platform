@@ -10,6 +10,7 @@ const OrderTracking = () => {
         <h3 className="font-semibold xl:text-[40px] lg:text-3xl mb-4 ml-1 tracking-[-2%] leading-[48px]">
           Orders Tracking
         </h3>
+        {/* header section above the table  */}
         <div className="align-middle rounded-tl-lg rounded-tr-lg inline-block  lg:w-[72vw] py-4 overflow-hidden bg-white shadow-lg">
           <div className="flex xl:justify-start justify-between ml-4 ">
             <div className="flex flex-row gap-5">
@@ -68,6 +69,8 @@ const OrderTracking = () => {
             </div>
           </div>
         </div>
+
+        {/* header section End  */}
         <div className="inline-block lg:w-[72vw] shadow rounded-b-lg   bg-white  pt-3 ">
           <table className="lg:w-[72vw]">
             <thead>

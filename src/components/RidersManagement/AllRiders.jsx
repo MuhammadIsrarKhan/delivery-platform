@@ -10,6 +10,8 @@ const AllRiders = () => {
         <h3 className="font-semibold xl:text-[40px] mb-4 ml-1 lg:text-3xl tracking-[-2%] leading-[48px]">
           Riders management
         </h3>
+
+        {/* header section  */}
         <div className="align-middle rounded-tl-lg rounded-tr-lg  w-[948px] lg:w-[72vw] py-4 bg-white shadow-lg">
           <div className="flex flex-row gap-4 ml-4 relative">
             <div className="w-5 h-10 rounded  bg-[#CABDFF]"></div>
@@ -38,6 +40,8 @@ const AllRiders = () => {
             </div>
           </div>
         </div>
+
+        {/* End header section  */}
         <div className="inline-block w-[948px] lg:w-[72vw] shadow rounded-b-lg   bg-white  pt-3 ">
           <table className="lg:w-[72vw]">
             <thead>
