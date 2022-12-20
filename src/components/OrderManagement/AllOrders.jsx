@@ -13,8 +13,43 @@ const AllOrders = () => {
           Orders management
         </h3>
 
+        {/* status  */}
+        <div className="align-middle mb-2 rounded-lg inline-block  lg:w-[72vw] py-4 overflow-hidden bg-white shadow-lg">
+          <div className="flex xl:justify-start justify-between ml-4 ">
+            <div>
+              <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500">
+                <li className="mr-2">
+                  <a
+                    href="#"
+                    className="inline-block py-2 mt-1 px-2 border-b-[3px] border-solid border-[#2A85FF] text-[#2A85FF] active"
+                  >
+                    Pending
+                  </a>
+                </li>
+                <li className="mr-2">
+                  <a
+                    href="#"
+                    className="inline-block py-2 mt-1 px-3 rounded-lg"
+                  >
+                    Active
+                  </a>
+                </li>
+                <li className="mr-2">
+                  <a href="#" className="inline-block py-2 mt-1 px-3">
+                    Cancel
+                  </a>
+                </li>
+                <li className="mr-2">
+                  <a href="#" className="inline-block py-2 mt-1 px-3">
+                    Completed
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         {/* header start  */}
-        <div className="align-middle rounded-tl-lg rounded-tr-lg inline-block lg:w-[98%] xl:py-4 lg:py-4 overflow-hidden bg-white shadow-lg">
+        <div className="align-middle rounded-tl-lg rounded-tr-lg inline-block lg:w-[72vw] xl:py-4 lg:py-4 overflow-hidden bg-white shadow-lg">
           <div className="flex flex-row gap-3 ml-4">
             <div className="w-5 h-10 rounded  bg-[#CABDFF]"></div>
             <div className="font-semibold text-xl leading-8 py-1">Orders</div>
@@ -43,7 +78,7 @@ const AllOrders = () => {
         {/* header end  */}
 
         {/* table start */}
-        <div className="inline-block lg:w-[98%] shadow rounded-b-lg   bg-white  pt-3 ">
+        <div className="inline-block lg:w-[72vw] shadow rounded-b-lg   bg-white  pt-3 ">
           <table className="lg:w-[95%] ml-4">
             <thead>
               <tr>
