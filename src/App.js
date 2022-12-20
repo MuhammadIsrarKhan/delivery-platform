@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import CustomerList from "./components/Customers/CustomerList";
 import AllOrders from "./components/OrderManagement/AllOrders";
 import Neworder from "./components/OrderManagement/Neworder";
 import OrderTracking from "./components/OrderManagement/OrdersTracking";
@@ -24,6 +25,10 @@ function App() {
         //rider management routes
         { path: "/AllRiders", element: <AllRiders /> },
         { path: "/teams", element: <Teams /> },
+
+        //
+        // customers
+        { path: "/customerList", element: <CustomerList /> },
       ],
     },
   ]);

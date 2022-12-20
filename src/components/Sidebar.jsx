@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Topbar from "./Topbar";
 import Theme from "./utilities/Theme";
 import OrderManagement from "./OrderManagement/OrderManagement";
@@ -44,8 +44,8 @@ const Sidebar = () => {
             />
             <ul className="lg:ml-[14px] xl:ml-[18px]">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/CustomerList"
                   className="flex items-center p-2 text-base lg:text-sm rounded-lg  hover:bg-[#EFEFEF] xl:w-[23vw] lg:w-[23vw]"
                 >
                   <img
@@ -56,7 +56,7 @@ const Sidebar = () => {
                   <span className="ml-3 text-[#6F767E] xl:text-lg font-semibold">
                     Customers
                   </span>
-                </a>
+                </Link>
               </li>
               <li>
                 <a
