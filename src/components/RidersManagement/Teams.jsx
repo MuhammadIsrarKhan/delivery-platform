@@ -11,6 +11,7 @@ const Teams = () => {
         Teams management
       </h3>
       <div className="rounded-lg lg:w-[72vw] h-[440px] py-4 bg-white shadow-lg">
+        {/* header  */}
         <div className="flex flex-row gap-3 ml-4">
           <div className="w-5 h-10 rounded  bg-[#CABDFF]"></div>
           <div className="font-semibold text-xl leading-8 py-1">Teams</div>
@@ -38,6 +39,7 @@ const Teams = () => {
               </p>
               <img className="ml-1" src={subtractIcon} alt="subtract icon" />
             </div>
+            {/* leftSide table  */}
             <table className="w-full table-fixed">
               <thead>
                 <tr>
@@ -118,10 +120,13 @@ const Teams = () => {
                 </tr>
               </tbody>
             </table>
+
+            {/* right --> side riders  */}
             <button className="mt-10 ml-[30%]">
               <img src={loadmore} alt="load more" />
             </button>
           </div>
+          right side table
           <div className="flex flex-col lg:w-[28vw]">
             <p className="font-semibold text-sm text-[#6F767E]">
               Green Street Riders

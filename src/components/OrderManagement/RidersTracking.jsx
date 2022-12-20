@@ -6,6 +6,7 @@ const RidersTracking = () => {
       <h3 className="font-semibold xl:text-[40px]  mb-4 ml-1 lg:text-3xl tracking-[-2%] leading-[48px] flex flex-col">
         Riders tracking
       </h3>
+      {/* header section of the page  */}
       <div className="rounded-lg lg:w-[72vw]  h-[75vh] py-4 bg-white shadow-lg">
         <div className="flex flex-row gap-3 xl:gap-5 ml-4">
           <div className="w-5 h-10 rounded  bg-[#CABDFF]"></div>
@@ -26,6 +27,7 @@ const RidersTracking = () => {
           </form>
         </div>
 
+        {/* Embeded map section */}
         <img
           className=" rounded-xl border-2 border-solid border-[#CDCDCD] mt-2 mx-auto w-[calc(100%-5rem)] h-[calc(100%-5rem)]"
           style={{ objectFit: "cover" }}

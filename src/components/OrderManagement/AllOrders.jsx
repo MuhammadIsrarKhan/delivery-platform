@@ -6,10 +6,14 @@ import personIcon from "../../assets/person.svg";
 const AllOrders = () => {
   return (
     <>
+      {/* from /Allorder Route*/}
       <div>
+        {/* title of the page */}
         <h3 className="font-semibold xl:text-[40px] lg:text-3xl mb-4 ml-1 tracking-[-2%] leading-[48px]">
           Orders management
         </h3>
+
+        {/* header start  */}
         <div className="align-middle rounded-tl-lg rounded-tr-lg inline-block lg:w-[98%] xl:py-4 lg:py-4 overflow-hidden bg-white shadow-lg">
           <div className="flex flex-row gap-3 ml-4">
             <div className="w-5 h-10 rounded  bg-[#CABDFF]"></div>
@@ -36,6 +40,9 @@ const AllOrders = () => {
             </Link>
           </div>
         </div>
+        {/* header end  */}
+
+        {/* table start */}
         <div className="inline-block lg:w-[98%] shadow rounded-b-lg   bg-white  pt-3 ">
           <table className="lg:w-[95%] ml-4">
             <thead>
@@ -114,6 +121,8 @@ const AllOrders = () => {
               </tr>
             </tbody>
           </table>
+
+          {/* table end  */}
           <div className="sm:flex-1 sm:flex sm:items-center sm:justify-between mt-4">
             <div></div>
             <div>
