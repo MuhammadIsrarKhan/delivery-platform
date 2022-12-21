@@ -2,6 +2,7 @@
 import searchIcon from "../../assets/searchIcon.svg";
 import assignLabel from "../../assets/assignLabel.svg";
 import trackOrder from "../../assets/trackOrder.svg";
+import { Link } from "react-router-dom";
 
 const OrderTracking = () => {
   return (
@@ -10,33 +11,15 @@ const OrderTracking = () => {
         <h3 className="font-semibold xl:text-[40px] lg:text-3xl mb-4 ml-1 tracking-[-2%] leading-[48px]">
           Orders Tracking
         </h3>
-        {/* header section above the table  */}
-        <div className="align-middle rounded-tl-lg rounded-tr-lg inline-block  lg:w-[72vw] py-4 overflow-hidden bg-white shadow-lg">
+        {/* status  */}
+        <div className="align-middle mb-2 rounded-lg inline-block  lg:w-[72vw] py-4 overflow-hidden bg-white shadow-lg">
           <div className="flex xl:justify-start justify-between ml-4 ">
-            <div className="flex flex-row gap-5">
-              <div className="w-5 h-10 rounded  bg-[#CABDFF]"></div>
-              <div className="font-semibold text-xl leading-8 py-1">Orders</div>
-
-              <form>
-                <div className="relative">
-                  <div className="flex absolute inset-y-0 left-0 items-center pl-3">
-                    <img src={searchIcon} alt="search icon" />
-                  </div>
-                  <input
-                    type="search"
-                    className="block focus:outline-none p-3 pl-10  font-bold text-xs xl:w-80 lg:w-[24vw]  rounded-lg bg-[#F4F4F4] caret-[#2A85FF]"
-                    placeholder="Search orders"
-                    required
-                  />
-                </div>
-              </form>
-            </div>
-            <div className="xl:absolute xl:right-5">
+            <div>
               <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500">
                 <li className="mr-2">
                   <a
                     href="#"
-                    className="inline-block py-2 mt-1 px-3 text-[#2A85FF] bg-[#EFEFEF] rounded-lg active"
+                    className="inline-block py-2 mt-1 px-2 border-b-[3px] border-solid border-[#2A85FF] text-[#2A85FF] active"
                   >
                     Pending
                   </a>
@@ -45,6 +28,7 @@ const OrderTracking = () => {
                   <a
                     href="#"
                     className="inline-block py-2 mt-1 px-3 rounded-lg hover:text-gray-900 hover:bg-gray-100"
+
                   >
                     Active
                   </a>
@@ -66,6 +50,38 @@ const OrderTracking = () => {
                   </a>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+        {/* header section above the table  */}
+        <div className="align-middle rounded-tl-lg rounded-tr-lg inline-block  lg:w-[72vw] py-4 overflow-hidden bg-white shadow-lg">
+          <div className="flex xl:justify-start justify-between ml-4 ">
+            <div className="flex flex-row gap-5">
+              <div className="w-5 h-10 rounded  bg-[#CABDFF]"></div>
+              <div className="font-semibold text-xl leading-8 py-1">Orders</div>
+
+              <form>
+                <div className="relative">
+                  <div className="flex absolute inset-y-0 left-0 items-center pl-3">
+                    <img src={searchIcon} alt="search icon" />
+                  </div>
+                  <input
+                    type="search"
+                    className="block focus:outline-none p-3 pl-10  font-bold text-xs xl:w-80 lg:w-[24vw]  rounded-lg bg-[#F4F4F4] caret-[#2A85FF]"
+                    placeholder="Search orders"
+                    required
+                  />
+                </div>
+              </form>
+            </div>
+            <div className="xl:absolute xl:right-0">
+              <Link
+                to="/neworder"
+                type="button"
+                className="lg:right-10 lg:absolute lg:w-32 lg:h-10 rounded-xl bg-[#2A85FF] text-white font-medium text-base leading-normal text-center shadow-md hover:bg-blue-700 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+              >
+                <span className="lg:text-[25px]">+</span> New order
+              </Link>
             </div>
           </div>
         </div>
