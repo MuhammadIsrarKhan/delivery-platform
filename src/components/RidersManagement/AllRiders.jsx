@@ -43,53 +43,53 @@ const AllRiders = () => {
 
         {/* End header section  */}
         <div className="inline-block w-[948px] lg:w-[72vw] shadow rounded-b-lg   bg-white  pt-3 ">
-          <table className="lg:w-[72vw]">
+          <table className="lg:w-[95%] ml-4">
             <thead>
-              <tr>
-                <th className="p-4  text-left  border-b-2 border-gray-100  leading-4 text-[#6F767E] text-sm xl:text-base">
+              <tr className="border-b">
+                <th className="p-4  text-left   border-gray-100  leading-4 text-[#6F767E] text-sm xl:text-base">
                   Id
                 </th>
-                <th className="w-[165px] border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
+                <th className="w-[165px]  border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
                   User
                 </th>
-                <th className="w-32 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
+                <th className="w-32  border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
                   Phone Number
                 </th>
-                <th className="border-b-2 xl:w-24 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
+                <th className=" xl:w-24 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
                   Team
                 </th>
-                <th className="w-20 xl:w-32 border-b-2 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
+                <th className="w-20 xl:w-32  border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
                   Order Earnings
                 </th>
-                <th className="w-20 border-b-2 xl:w-24 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
+                <th className="w-20  xl:w-24 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
                   Total Paid
                 </th>
-                <th className="w-20 border-b-2 xl:w-32 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
+                <th className="w-20  xl:w-32 border-gray-100 text-left text-sm leading-4 text-[#6F767E] xl:text-base">
                   Final Balance
                 </th>
-                <th className="w-28 border-b-2 border-gray-100 text-left text-sm leading-4   text-[#6F767E] xl:text-base">
+                <th className="w-28  border-gray-100 text-left text-sm leading-4   text-[#6F767E] xl:text-base">
                   Vehicle Type
                 </th>
-                <th className="-translate-x-4 w-20 text-left   border-b-2 border-gray-100  text-sm leading-4 text-[#6F767E] pl-5 xl:text-base">
+                <th className="-translate-x-4 w-20 text-left    border-gray-100  text-sm leading-4 text-[#6F767E] pl-5 xl:text-base">
                   Status
                 </th>
               </tr>
             </thead>
             <tbody className="bg-white">
-              <tr className="w-[948px]">
-                <td className="p-4 border-b-2 border-gray-100">
+              <tr className="w-[948px] border-b">
+                <td className="p-4  border-gray-100">
                   <div className="flex items-center">
                     <div>
                       <div className="text-sm leading-5 text-gray-800">#1</div>
                     </div>
                   </div>
                 </td>
-                <td className=" py-4 border-b-2 border-gray-100">
+                <td className=" py-4  border-gray-100">
                   <div className="flex flex-row text-xs font-medium leading-5 text-blue-900">
                     <img
                       src={myImage}
                       alt="avatar"
-                      className="rounded-full w-10 "
+                      className="rounded-full w-10 h-10"
                     />
                     <div className=" ml-3 flex flex-col">
                       <p className="font-bold text-base text-[#1A1D1F]">
@@ -101,33 +101,33 @@ const AllRiders = () => {
                     </div>
                   </div>
                 </td>
-                <td className=" py-4  border-b-2 text-blue-900 border-gray-100 text-xs leading-5 ">
+                <td className=" py-4   text-blue-900 border-gray-100 text-xs leading-5 ">
                   <div className="text-[#83BF6E] w-[92px] text-center bg-[#EAFAE4] rounded">
                     +01232193218
                   </div>
                 </td>
-                <td className=" border-b-2  border-gray-100 text-sm leading-5">
+                <td className="   border-gray-100 text-sm leading-5">
                   <p className="bg-[#B5E4CA] w-16 font-semibold rounded-md text-center">
                     Lusk
                   </p>
                 </td>
-                <td className=" py-4  border-b-2 border-gray-100  text-xs leading-5 ">
+                <td className=" py-4   border-gray-100  text-xs leading-5 ">
                   <p className="bg-[#EFEFEF] font-semibold  w-12  rounded-md text-center">
                     $308.5
                   </p>
                 </td>
-                <td className="  border-b-2 border-gray-100 text-sm font-semibold text-[#6F767E] leading-5 text-center">
+                <td className="   border-gray-100 text-sm font-semibold text-[#6F767E] leading-5 text-center">
                   $100.0
                 </td>
-                <td className="  border-b-2 border-gray-100 text-sm font-semibold text-[#6F767E] leading-5">
+                <td className="   border-gray-100 text-sm font-semibold text-[#6F767E] leading-5">
                   $410.8
                 </td>
-                <td className="  border-b-2 border-gray-100 text-blue-900 text-xs leading-5">
+                <td className="   border-gray-100 text-blue-900 text-xs leading-5">
                   <p className="text-[#1A1D1F] font-semibold text-sm text-center">
                     Bike
                   </p>
                 </td>
-                <td className="border-b-2 border-gray-100">
+                <td className=" border-gray-100">
                   <div className="bg-[#EAFAE4] w-[59px] h-[24px] text-center rounded ">
                     <p className="text-[#83BF6E] font-semibold text-sm py-[2px]">
                       Active
