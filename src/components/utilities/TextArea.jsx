@@ -11,6 +11,7 @@ const TextArea = () => {
   return (
     <form className="-translate-y-4">
       <div className="w-full mb-4   rounded-xl bg-[#FCFCFC] ">
+        {/* icons header {start} */}
         <div className="flex items-center justify-between px-3 py-2 border-b-0 rounded-xl rounded-b-none border-[2px] border-solid border-gray-200">
           <div className="flex flex-wrap items-center divide-gray-200 sm:divide-x ">
             <div className="flex items-center space-x-1 sm:pr-4">
@@ -80,6 +81,10 @@ const TextArea = () => {
             </div>
           </div>
         </div>
+
+        {/* icons header {end}  */}
+
+        {/* text-area text input section  */}
         <div className="px-4 py-2 bg-[#F4F4F4] rounded-b-lg border-t-0 border-[2px] border-solid border-gray-200 dark:bg-gray-800">
           <label className="sr-only">Publish post</label>
           <textarea

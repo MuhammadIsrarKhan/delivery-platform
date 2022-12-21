@@ -11,13 +11,16 @@ import threeDots from "../../assets/threeDots.svg";
 const Neworder = () => {
   return (
     <>
+      {/* from /newOrder route  */}
       <div className="flex flex-col">
         <div>
+          {/* title  */}
           <h3 className="font-semibold lg:text-3xl xl:text-[40px] mb-4 ml-1 tracking-[-2%] leading-[48px]">
             New Order
           </h3>
           <div className="flex flex-row lg:w-[96%] xl:h-full xl:w-[100%] overflow-hidden">
             <div className=" w-[610px] lg:w-[42vw] rounded-lg p-6 gap-6 flex flex-col h-[860px]  bg-[#FCFCFC]">
+              {/* header start */}
               <div className="flex flex-row relative">
                 <div className="w-4 h-8 rounded inline-block bg-[#B5E4CA]"></div>
                 <p className="xl:w-60 lg:w-40 lg:my-1 font-semibold xl:text-xl lg:text-base leading-8  ml-3">
@@ -36,7 +39,9 @@ const Neworder = () => {
                   </span>
                 </button>
               </div>
+              {/* header end  */}
 
+              {/* all about ordertitle input {start} */}
               <div className="flex flex-row">
                 <p className="font-semibold text-sm xl:text-base text-gray-800">
                   Order title
@@ -50,7 +55,6 @@ const Neworder = () => {
                   Maximum 100 characters. No HTML or emoji allowed
                 </p>
               </div>
-
               <input
                 type="text"
                 className="-translate-y-4 p-3 w-[560px] lg:w-[99%] rounded-xl focus:outline-none h-[48px] bg-[#FFFFFF] border-[2px] border-solid border-gray-200 focus:border-[#2a85ff59]"
@@ -62,6 +66,9 @@ const Neworder = () => {
                 </p>
                 <img className="ml-1" src={subtractIcon} alt="subtract icon" />
               </div>
+              {/* ordertitle input {end}  */}
+
+              {/* text-area component  */}
               <TextArea />
 
               <div className="flex flex-row -translate-y-6">
@@ -71,6 +78,7 @@ const Neworder = () => {
                 <img className="ml-1" src={subtractIcon} alt="subtract icon" />
               </div>
 
+              {/* select input */}
               <div className="mt-0 font-semibold relative -top-10">
                 <select className="w-full p-3 text-gray-700  bg-white border-[2px] border-solid border-gray-200 transition ease-in-out rounded-xl  focus:text-gray-700 focus:bg-white focus:border-[#2a85ff59] focus:outline-none">
                   <option>Jhon Doe</option>
@@ -83,10 +91,10 @@ const Neworder = () => {
                 <img src={newCustomerBtn} alt="add customer" />
               </button>
 
+              {/* input */}
               <p className="text-[#6F767E] text-xs font-bold relative -top-12">
                 Pickup Location
               </p>
-
               <div className="flex flex-row relative -top-16 w-[610px] lg:w-[200%]">
                 <img
                   className=" z-10 p-3  m-1 relative rounded-l-xl -top-[2px] bg-[#F4F4F4]"
@@ -98,6 +106,8 @@ const Neworder = () => {
                   className="lg:w-[50%] relative -left-[50px]  px-12 w-full rounded-xl focus:outline-none h-[48px] bg-[#FFFFFF] border-[2px] border-solid border-gray-200 focus:border-[#2a85ff59]"
                 />
               </div>
+
+              {/* input  */}
               <p className="text-[#6F767E] text-xs font-bold relative -top-16">
                 Drop off
               </p>
@@ -115,6 +125,7 @@ const Neworder = () => {
               </div>
             </div>
 
+            {/* Order preview div start  */}
             <div className=" flex flex-col gap-3 w-[310px] lg:w-[28vw] ml-2 h-[363px]  rounded-lg p-6  bg-[rgb(252,252,252)]">
               <div className="flex flex-row">
                 <img src={newTag} alt="tag " />
@@ -154,7 +165,9 @@ const Neworder = () => {
               </div>
             </div>
           </div>
+          {/* Order preview div end  */}
         </div>
+        {/* page footer  */}
         <div
           style={{
             alignItems: "center",

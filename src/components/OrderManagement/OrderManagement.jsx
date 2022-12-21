@@ -7,7 +7,9 @@ import rightArrowIcon from "../../assets/rightarrow.svg";
 import homeIcon from "../../assets/homeIcon.svg";
 const OrderManagement = ({ activeStatus, dropDown }) => {
   return (
+    // nav of OrderManagement and all its nav-items
     <ul className="space-y-1 lg:ml-3 xl:ml-4">
+      {/* home nav-item  */}
       <li>
         <a
           href="#"
@@ -21,6 +23,7 @@ const OrderManagement = ({ activeStatus, dropDown }) => {
           <span className="ml-3 text-[#6F767E] font-semibold">Home</span>
         </a>
       </li>
+      {/* OrderManagement nav-item  */}
       <li>
         <Link
           to="/AllOrders"
@@ -52,11 +55,12 @@ const OrderManagement = ({ activeStatus, dropDown }) => {
         </Link>
         {activeStatus === "order management" ? (
           <div>
+            {/* inner nav-items of OrderManagement  */}
             <ul className="ml-4 lg:h-40 xl:h-44">
               <li className="xl:w-[30vw]">
                 <span className="border-[#EFEFEF] border-2 border-t-0 border-r-0 rounded-bl-md w-4 inline-block h-6 relative"></span>{" "}
                 <Link
-                  to="/neworder"
+                  to="/AllOrders"
                   className="relative top-1 xl:w-[19vw] lg:w-[20vw] lg:inline-block xl:inline-block focus:font-semibold text-sm xl:text-lg focus:bg-[#EFEFEF] focus:shadow p-3 lg:p-2 xl:p-2 pl-1  rounded-xl -translate-x-1"
                 >
                   All Orders

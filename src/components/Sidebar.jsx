@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Topbar from "./Topbar";
 import Theme from "./utilities/Theme";
 import OrderManagement from "./OrderManagement/OrderManagement";
@@ -12,6 +12,7 @@ import customization from "../assets/custimaztion.svg";
 import customerIcon from "../assets/customerManagement/customer.svg";
 
 const Sidebar = () => {
+  //handling dropdown effect in side bar
   const [activeStatus, setActiveStatus] = useState("");
   const dropDownHandler = (status) => {
     if (activeStatus === status) {
@@ -31,18 +32,20 @@ const Sidebar = () => {
         />
         <aside className="mt-3" aria-label="Sidebar">
           <div className="lg:w-[26vw] xl:w-[25vw] xl:h-[70vh] xl:overflow-y-auto xl:overflow-x-hidden">
+            {/* All about OrderManagement nav-item are in the below component */}
             <OrderManagement
               activeStatus={activeStatus}
               dropDown={dropDownHandler}
             />
+            {/* All about RidersManagement nav-item are in the below component */}
             <RidersManagement
               activeStatus={activeStatus}
               dropDown={dropDownHandler}
             />
             <ul className="lg:ml-[14px] xl:ml-[18px]">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/CustomerList"
                   className="flex items-center p-2 text-base lg:text-sm rounded-lg  hover:bg-[#EFEFEF] xl:w-[23vw] lg:w-[23vw]"
                 >
                   <img
@@ -53,7 +56,7 @@ const Sidebar = () => {
                   <span className="ml-3 text-[#6F767E] xl:text-lg font-semibold">
                     Customers
                   </span>
-                </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -103,8 +106,11 @@ const Sidebar = () => {
             <Theme />
           </div>
         </aside>
+        {/* side bar ul ended */}
       </div>
       <Topbar />
+
+      {/* Contents which are rendered below top and right from the sidebar */}
       <div className="absolute top-24 left-[27%]  flex flex-row justify-center align-center">
         <Outlet />
       </div>
